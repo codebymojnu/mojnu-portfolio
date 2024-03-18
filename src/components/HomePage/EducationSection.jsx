@@ -1,15 +1,15 @@
 export default function EducationSection() {
   const education = [
     {
-      year: "2024",
-      degree: "B.Sc. in Chemistry",
+      year: "2023",
+      degree: "B.Sc. Engineering in Computer Science and Engineering",
       institution:
         "Pabna University of Science and Technology, Pabna 6600, Bangladesh",
     },
     {
-      year: "2018",
+      year: "2016",
       degree: "Higher Secondary Certificate (HSC) in Science",
-      institution: "Ishwardi Govt.College, Pabna",
+      institution: "Nageswari Govt. College, Nageswari, Kurigram, Bangladesh.",
     },
     // Add more education entries as needed
   ];
@@ -18,7 +18,7 @@ export default function EducationSection() {
     <section className="py-8 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="mb-8">
-          <h2 className="text-xl font-bold mb-4 pb-2 border-b border-gray-300">
+          <h2 className="text-xl font-bold mb-4 pb-1 border-b border-gray-300">
             Education
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4">

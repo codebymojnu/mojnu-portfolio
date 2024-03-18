@@ -1,25 +1,24 @@
-import AreaOfInterest from "./components/AreaOfInterest";
-import EducationSection from "./components/EducationSection";
-import FirstSection from "./components/FirstSection";
-import HonorsAndAwardsSection from "./components/HonorsAndAwardSection";
-import PersonalInformationSection from "./components/PersonalInformation";
-import ReferencesSection from "./components/ReferencesSection";
-import SkillsSection from "./components/SkillsSection";
-import WorkExperienceSection from "./components/WorkExperienceSection";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./components/HomePage/Home";
+import Navbar from "./components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <div className="container mx-auto p-4 w-full md:max-w-4xl  m-2  md:p-8 border border-gray-300 rounded-lg shadow-md">
-      <FirstSection />
-      <AreaOfInterest />
-      <EducationSection />
-      <WorkExperienceSection />
-      <SkillsSection />
-      <HonorsAndAwardsSection />
-      <PersonalInformationSection />
-      <ReferencesSection />
+    <div
+      style={{
+        fontFamily: 'Google Sans, "Helvetica Neue", sans-serif',
+        fontWeight: 400,
+      }}
+    >
+      <Router>
+        <Navbar />
 
-      {/* Add other sections here */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
+
+export default App;

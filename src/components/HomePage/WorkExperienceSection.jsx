@@ -1,9 +1,9 @@
 export default function WorkExperienceSection() {
   const workExperience = [
     {
-      year: "2022- Present",
-      position: "Research Assistant",
-      institution: "ABC University, Department of Chemistry",
+      year: "2024 - Present",
+      position: "Office Assistant",
+      institution: "PUST EDGE Project, Department of CSE",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
     },
