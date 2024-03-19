@@ -9,14 +9,9 @@ import Typewriter from "typewriter-effect";
 
 function FirstSection() {
   return (
-    <section className="bg-gray-100 py-4">
+    <section className="py-4">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <img
-            className="w-48 h-48 rounded-full mt-4 mb-4"
-            src="mojnu.jpg"
-            alt="Mojnu"
-          />
           <h1 className="text-3xl font-bold mb-2">Md. Mojnu Miah</h1>
           <p className="text-lg mb-4">
             <Typewriter

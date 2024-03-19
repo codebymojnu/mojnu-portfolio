@@ -19,7 +19,7 @@ export default function ReferencesSection() {
   ];
 
   return (
-    <section className="py-8 bg-gray-100">
+    <section className="">
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-4 pb-2 border-b border-gray-300">
