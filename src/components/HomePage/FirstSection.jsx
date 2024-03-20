@@ -1,4 +1,10 @@
-import { FaEnvelope, FaFacebook, FaLinkedin, FaPhone } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 
 function FirstSection() {
@@ -36,7 +42,7 @@ function FirstSection() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaFacebook className="text-2xl" />
+              <FaFacebook className="text-3xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/mojnu0"
@@ -44,19 +50,25 @@ function FirstSection() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaLinkedin className="text-2xl" />
+              <FaLinkedin className="text-3xl" />
             </a>
             <a
               href="mailto:thisismojnu@gmail.com"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaEnvelope className="text-2xl" />
+              <FaEnvelope className="text-3xl" />
             </a>
             <a
               href="tel:+8801788262433"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaPhone className="text-2xl" />
+              <FaPhone className="text-3xl" />
+            </a>
+            <a
+              href="https://github.com/codebymojnu"
+              className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
+            >
+              <FaGithub className="text-3xl" />
             </a>
           </div>
         </div>
