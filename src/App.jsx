@@ -13,7 +13,7 @@ function App() {
     >
       <Router>
         <Navbar />
-        <div className="container mx-auto p-4 w-full md:max-w-4xl  m-2  md:p-8 border border-gray-300 rounded-lg shadow-md">
+        <div className="container mx-auto p-4 w-full md:max-w-4xl  m-2 mt-0 md:p-8 shadow-xs">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

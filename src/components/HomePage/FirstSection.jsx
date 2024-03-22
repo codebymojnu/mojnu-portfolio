@@ -9,7 +9,7 @@ import Typewriter from "typewriter-effect";
 
 function FirstSection() {
   return (
-    <section className="py-4">
+    <section className="py-4 mb-4">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden">
@@ -21,7 +21,7 @@ function FirstSection() {
           </div>
           <img src="/name.png" alt="mojnu" />
 
-          <p className="text-2xl font-bold mb-4">
+          <p className="text-2xl mb-4">
             <Typewriter
               options={{
                 strings: [
