@@ -1,19 +1,19 @@
 export default function PersonalInformationSection() {
   const personalInformation = [
-    { label: "Father’s name", value: "Md. Mostafizur Rahman" },
-    { label: "Mother’s name", value: "Mst. Ayvee Akter" },
-    { label: "Place of Birth", value: "Baghail, Paksey, Ishwardi, Pabna" },
+    { label: "Father’s name", value: "Md. Shahadat Hossain" },
+    { label: "Mother’s name", value: "Most. Monju Begum" },
+    { label: "Place of Birth", value: "Berubari, Nageswari, Kurigram" },
     { label: "Nationality", value: "Bangladeshi (By Birth)" },
-    { label: "Sex", value: "Female" },
+    { label: "Sex", value: "Male" },
     { label: "Religion", value: "Islam" },
     { label: "Marital status", value: "Unmarried" },
     { label: "Blood group", value: "A+ (Positive)" },
     {
       label: "Address",
-      value: "Baghail, Paksey, Ishwardi, Pabna.",
+      value: "Berubari 5660, Nageswari, Kurigram",
     },
-    { label: "Email", value: "135833mithila@gmail.com" },
-    { label: "Phone", value: "1719791921" }, // Add your phone number here
+    { label: "Email", value: "thisismojnu@gmail.com" },
+    { label: "Phone", value: "01788262433" }, // Add your phone number here
   ];
 
   return (
