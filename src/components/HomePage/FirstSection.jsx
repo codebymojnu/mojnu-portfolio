@@ -35,14 +35,14 @@ function FirstSection() {
             />
           </p>
 
-          <div className="flex gap-8">
+          <div className="flex gap-4">
             <a
               href="https://www.facebook.com/mojnu0"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaFacebook className="text-3xl" />
+              <FaFacebook className="text-2xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/mojnu0"
@@ -50,25 +50,25 @@ function FirstSection() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaLinkedin className="text-3xl" />
+              <FaLinkedin className="text-2xl" />
             </a>
             <a
               href="mailto:thisismojnu@gmail.com"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaEnvelope className="text-3xl" />
+              <FaEnvelope className="text-2xl" />
             </a>
             <a
               href="tel:+8801788262433"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaPhone className="text-3xl" />
+              <FaPhone className="text-2xl" />
             </a>
             <a
               href="https://github.com/codebymojnu"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaGithub className="text-3xl" />
+              <FaGithub className="text-2xl" />
             </a>
           </div>
         </div>

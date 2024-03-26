@@ -9,7 +9,7 @@ export default function DownloadCV() {
   };
 
   return (
-    <section className="py-4">
+    <section className="mb-8 lg:mb-4">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center">
           <button
@@ -17,7 +17,7 @@ export default function DownloadCV() {
             onClick={downloadCV}
           >
             <FaDownload className="mr-2" />
-            Download CV
+            Download My CV
           </button>
         </div>
       </div>

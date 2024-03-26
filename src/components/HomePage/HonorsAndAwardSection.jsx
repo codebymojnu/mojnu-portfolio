@@ -6,6 +6,11 @@ export default function HonorsAndAwardsSection() {
         "My life journey was published in the 10th edition of Babylon Kathokata under the title 'হামার ছাওয়াটা মানুষ হইবে' (Page No. 14).",
       link: "https://babylonkathokata.com/2015/12/15/ব্যাবিলন-কথকতা-১০ম-সংখ্য/",
     },
+    {
+      year: "2017",
+      award: "Daily Ittefaq Published My Story: মজনু কি পাবেন স্বপ্ন পূরণ করতে",
+      link: "https://www.ittefaq.com.bd/450373/মজনু-কী-পাবেন-স্বপ্নপূরণ-করতে",
+    },
 
     {
       year: "2008",
@@ -34,7 +39,9 @@ export default function HonorsAndAwardsSection() {
                       href={item.link}
                       className="text-blue-500 hover:underline"
                     >
-                      View Link
+                      {item.year == 2017
+                        ? "অনলাইনে পত্রিকায় দেখুন"
+                        : "অনলাইন ভার্সনটি দেখুন"}
                     </a>
                   )}
                 </div>
