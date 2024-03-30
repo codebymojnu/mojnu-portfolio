@@ -40,7 +40,7 @@ export default function HonorsAndAwardsSection() {
                       className="text-blue-500 hover:underline"
                     >
                       {item.year == 2017
-                        ? "অনলাইনে পত্রিকায় দেখুন"
+                        ? "ইত্তেফাক পত্রিকার অনলাইন ভার্সনে দেখুন"
                         : "অনলাইন ভার্সনটি দেখুন"}
                     </a>
                   )}
