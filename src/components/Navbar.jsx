@@ -29,13 +29,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="container mx-auto w-full md:max-w-4xl bg-white shadow-sm">
+    <nav className="">
       <div className="max-w-7xl mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
           <NavLink to="/">
-            <div className="flex-shrink-0">
-              <img src="/logo.png" alt="Logo" className="h-12" />
-            </div>
+            <div className="flex-shrink-0">Home</div>
           </NavLink>
           <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1">
             <ul className="flex space-x-4 text-gray-800">

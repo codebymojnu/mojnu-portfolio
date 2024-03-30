@@ -3,7 +3,7 @@ const Projects = () => {
     {
       name: "Non Profit Organization Website for SPAF",
       description:
-        "Created for Safe and Poverty Alleviation Foundation (SPAF), this website showcases SPAF's mission and initiatives. It features detailed program info, news updates, donation and volunteer forms, and an admin dashboard. Built with HTML, Tailwind CSS, JavaScript, React, Node.js and MongoDB, the site boasts modern design, mobile-friendliness, and easy navigation. Benefits include increased visibility, enhanced communication, and improved resource management for SPAF's goals.",
+        "Created for Safe and Poverty Alleviation Foundation (SPAF), this website showcases SPAF's mission and initiatives. It features detailed program info, news updates, donation and volunteer forms, and an admin dashboard. Built with HTML, Tailwind CSS, JavaScript, React, Node.js and MongoDB, the site boasts modern design, mobile-friendliness, and easy navigation. ",
       technologies: ["React", "Redux", "Node.js", "Express", "MongoDB"],
       startDate: "February 2024",
       endDate: "March 2024",
@@ -24,12 +24,13 @@ const Projects = () => {
     // Add more projects as needed
   ];
   return (
-    <div className="   container mx-auto w-full md:max-w-4xl mb-4">
-      <h1 className="text-3xl font-bold mb-8">Projects</h1>
+    <div className="   container mx-auto w-full md:max-w-4xl">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-lg font-bold mb-2">{project.name}</h2>
+            <h2 className="text-lg font-bold mb-2 pb-1 border-b border-gray-300">
+              {index + 1}. {project.name}
+            </h2>
             <p className="text-gray-700 mb-4">{project.description}</p>
             <p className="text-gray-700 mb-2">
               <span className="font-semibold">Technologies used:</span>{" "}
