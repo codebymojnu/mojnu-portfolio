@@ -9,7 +9,7 @@ export default function HonorsAndAwardsSection() {
     {
       year: "2017",
       award: "Daily Ittefaq Published My Story: মজনু কি পাবেন স্বপ্ন পূরণ করতে",
-      link: "",
+      link: "https://www.ittefaq.com.bd/450373/মজনু-কী-পাবেন-স্বপ্নপূরণ-করতে",
     },
 
     {
