@@ -12,8 +12,10 @@ function FirstSection() {
     <section className="mb-4">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <h1 className="text-9xl sm:text-2xl font-bold">Md. Mojnu Miah</h1>
-          <p className="text-lg mb-4">
+          <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold">
+            Md. Mojnu Miah
+          </h1>
+          <p className="lg:text-2xl text-lg mt-2 mb-4">
             <Typewriter
               options={{
                 strings: [
