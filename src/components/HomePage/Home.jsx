@@ -1,5 +1,4 @@
 import AreaOfInterestSection from "./AreaOfInterest";
-import DownloadCV from "./DownloadCV";
 import EducationSection from "./EducationSection";
 import FirstSection from "./FirstSection";
 import HonorsAndAwardsSection from "./HonorsAndAwardSection";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <div className="">
       <FirstSection />
-      <DownloadCV />
       <AreaOfInterestSection />
       <EducationSection />
       <WorkExperienceSection />

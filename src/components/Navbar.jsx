@@ -1,170 +1,50 @@
-import React, { useEffect, useRef, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-  const menuRef = useRef(null);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
+  const downloadCV = () => {
+    window.open(
+      "https://drive.google.com/file/d/1PO5ePARXWN3BAYU0BwARBKnwwKecMYn7/view",
+      "_blank"
+    );
   };
 
   return (
-    <nav className="">
-      <div className="container mx-auto p-4 w-full md:max-w-4xl  m-2 mt-0 md:p-8">
-        <div className="flex justify-between items-center">
-          <NavLink to="/">
-            <div className="flex-shrink-0">Home</div>
-          </NavLink>
-          <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1">
-            <ul className="flex space-x-4 text-gray-800">
-              <li className="py-2">
-                <NavLink
-                  to="/projects"
-                  onClick={closeMenu} // Close menu when NavLink is clicked
-                  className="hover:text-green-500"
-                >
-                  Projects
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/videos"
-                  onClick={closeMenu} // Close menu when NavLink is clicked
-                  className="hover:text-green-500"
-                >
-                  Videos
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/blog"
-                  onClick={closeMenu} // Close menu when NavLink is clicked
-                  className="hover:text-green-500"
-                >
-                  Blog
-                </NavLink>
-              </li>
-
-              {/* Add other menu items */}
-            </ul>
-          </div>
-          <div className="block lg:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-800 focus:outline-none"
-            >
-              {isOpen ? (
-                <svg
-                  className="h-8 w-8 fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 6L18 18M6 18L18 6L6 18Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="mt-3 h-8 w-8 fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect y="15" width="24" height="2" rx="1" fill="#FF6347" />
-                  <rect y="5" width="24" height="2" rx="1" fill="#32CD32" />
-                  <rect y="10" width="24" height="2" rx="1" fill="#4169E1" />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-      {/* Mobile Menu */}
+    <nav className="sticky top-0 z-50 border-b border-[#3f3f3f] bg-[#1E1F24] py-4">
       <div
-        ref={menuRef}
-        className={`lg:hidden bg-gray-800 fixed inset-y-0 right-0 z-50 transition-transform duration-300 transform ${
-          isOpen ? "translate-x-0 w-2/3" : "translate-x-full"
-        }`}
+        style={{
+          maxWidth: "800px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+        }}
       >
-        <div className="flex justify-end pt-4 pr-4">
-          <button
-            onClick={toggleMenu}
-            className="text-white focus:outline-none"
-          >
-            <svg
-              className="h-8 w-8 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M6 6L18 18M6 18L18 6L6 18Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <ul className="text-white text-lg mt-8 ml-4">
-          <li className="py-2">
-            <NavLink
-              to="/projects"
-              onClick={closeMenu} // Close menu when NavLink is clicked
-              className="hover:text-green-500 font-bold"
-              activeClassName="text-green-500"
-            >
+        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <Link to="/">
+            <img
+              className="max-w-[32px] lg:max-w-[44px] rounded-full"
+              src="./mojnu.jpg"
+              alt="logo"
+            />
+          </Link>
+          <div className="flex items-center space-x-4">
+            <Link to="/" className="btn-primary">
+              <img src="./home.svg" alt="Home" />
+              Home
+            </Link>
+            <Link to="/projects" className="btn-primary">
+              <img src="./projects.svg" alt="Projects" />
               Projects
-            </NavLink>
-          </li>
-          {/* Add other menu items */}
-
-          <li>
-            <NavLink
-              to="/videos"
-              onClick={closeMenu} // Close menu when NavLink is clicked
-              className="hover:text-green-500"
-            >
+            </Link>
+            <Link to="/videos" className="btn-primary">
+              <img src="./videos.svg" alt="videos" />
               Videos
-            </NavLink>
-          </li>
-          <li className="py-2">
-            <NavLink
-              to="/blog"
-              onClick={closeMenu} // Close menu when NavLink is clicked
-              className="hover:text-green-500"
-            >
-              Blog
-            </NavLink>
-          </li>
-        </ul>
+            </Link>
+            <Link to="/blog" className="btn-primary">
+              <img src="./blog.svg" alt="blog" />
+              Posts
+            </Link>
+          </div>
+        </div>
       </div>
     </nav>
   );

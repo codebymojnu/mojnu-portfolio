@@ -4,7 +4,6 @@ export default function AreaOfInterestSection() {
     "Content Creation",
     "Artificial Intelligence",
     "Blogging",
-    "Knowledge Sharing",
   ];
 
   return (
@@ -14,10 +13,10 @@ export default function AreaOfInterestSection() {
           <h2 className="text-xl font-bold mb-4 pb-2 border-b border-gray-300">
             Area of Interest
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:flex lg:flex-wrap gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:flex lg:flex-wrap">
             {interests.map((interest, index) => (
-              <div key={index} className="bg-blue-200 rounded-md p-2">
-                <p className="text-gray-800">{interest}</p>
+              <div key={index} className="rounded-md">
+                <p className="text-gray-800 mr-2">{interest + ","}</p>
               </div>
             ))}
           </div>

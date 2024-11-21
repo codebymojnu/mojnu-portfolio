@@ -9,19 +9,11 @@ import Typewriter from "typewriter-effect";
 
 function FirstSection() {
   return (
-    <section className="py-4 mb-4">
+    <section className="mb-4">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden">
-            <img
-              src="mojnu.jpg"
-              alt="mojnu"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <img src="/name.png" alt="mojnu" />
-
-          <p className="text-2xl mb-4">
+          <h1 className="text-9xl sm:text-2xl font-bold">Md. Mojnu Miah</h1>
+          <p className="text-lg mb-4">
             <Typewriter
               options={{
                 strings: [
@@ -42,7 +34,7 @@ function FirstSection() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaFacebook className="text-2xl" />
+              <FaFacebook className="text-lg" />
             </a>
             <a
               href="https://www.linkedin.com/in/mojnu0"
@@ -50,25 +42,25 @@ function FirstSection() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaLinkedin className="text-2xl" />
+              <FaLinkedin className="text-lg" />
             </a>
             <a
               href="mailto:thisismojnu@gmail.com"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaEnvelope className="text-2xl" />
+              <FaEnvelope className="text-lg" />
             </a>
             <a
               href="tel:+8801788262433"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaPhone className="text-2xl" />
+              <FaPhone className="text-lg" />
             </a>
             <a
               href="https://github.com/codebymojnu"
               className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              <FaGithub className="text-2xl" />
+              <FaGithub className="text-lg" />
             </a>
           </div>
         </div>
